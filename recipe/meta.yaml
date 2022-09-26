@@ -1,5 +1,5 @@
 {% set name = "execnb" %}
-{% set version = "0.1.3" %}
+{% set version = "0.1.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/execnb-{{ version }}.tar.gz
-  sha256: 309e0ace87ade9ec459173aa4182d08cbb90ff2ae33271b7cfcf1164634dc1b7
+  sha256: cbd812bf3240f05b21e7a1db03c4acce5a33b0105f4cb7e05860d79bdb9206f0
 
 build:
   entry_points:
@@ -37,7 +37,7 @@ test:
 about:
   home: https://fastai.github.io/execnb/
   dev_url: https://github.com/fastai/execnb
-  summary: Execute a jupyter notebook, fast, without needing jupyter 
+  summary: Execute a jupyter notebook, fast, without needing jupyter
   license: Apache-2.0
   license_file: LICENSE
 
