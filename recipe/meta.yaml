@@ -1,13 +1,13 @@
 {% set name = "execnb" %}
-{% set version = "0.1.6" %}
+{% set version = "0.1.8" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/execnb-{{ version }}.tar.gz
-  sha256: 289d97107a856344b16c08953d60453b47320b41168060eca3cc2dee504b4e05
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/execnb-{{ version }}.tar.gz
+  sha256: 64f4aea889125679800351d834c50e4f0fb9025f612b1a346503ef9d5b218312
 
 build:
   entry_points:
@@ -19,9 +19,10 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python {{ python_min }}
+    - setuptools
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - fastcore >=1.5.5
     - ipython
 
@@ -33,6 +34,7 @@ test:
     - exec_nb --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://fastai.github.io/execnb/
