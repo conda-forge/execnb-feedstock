@@ -20,6 +20,7 @@ requirements:
   host:
     - pip
     - python >=3.7
+    - setuptools
   run:
     - python >=3.7
     - fastcore >=1.5.5
