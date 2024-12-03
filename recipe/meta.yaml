@@ -1,5 +1,5 @@
 {% set name = "execnb" %}
-{% set version = "0.1.9" %}
+{% set version = "0.1.10" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/execnb-{{ version }}.tar.gz
-  sha256: 2d6581d6f052568287f0748b80ead01c1ed698528f336bcfa8c8630b01e9668a
+  sha256: d6df5b5e3858d70a88a40a4c73f702d72f212147bb4077a7b60165c6e6c0b009
 
 build:
   entry_points:
