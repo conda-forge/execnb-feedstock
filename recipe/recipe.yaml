@@ -28,7 +28,7 @@ requirements:
     - setuptools >=64
   run:
     - python >=${{ python_min }}
-    - fastcore >=2.1.2
+    - fastcore >=2.2.5
     - ipython
 
 tests:
