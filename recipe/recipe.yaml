@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: execnb
-  version: "0.3.2"
+  version: "0.3.3"
   python_min: "3.11"
 
 package:
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/execnb-${{ version }}.tar.gz
-  sha256: 723d01cb6388c112ad0eba1424637c105ad2fbed95c789baff7216078fae41da
+  sha256: d026b7e507e1acd13205d61ff4a0a5e6d0498ce3c395aefd87c5b4a0e1875aed
 
 build:
   number: 0
