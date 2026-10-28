@@ -2,8 +2,7 @@ schema_version: 1
 
 context:
   name: execnb
-  version: "0.3.3"
-  python_min: "3.11"
+  version: "0.3.4"
 
 package:
   name: ${{ name|lower }}
@@ -11,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/execnb-${{ version }}.tar.gz
-  sha256: d026b7e507e1acd13205d61ff4a0a5e6d0498ce3c395aefd87c5b4a0e1875aed
+  sha256: dadb51fca0ce7976279c2290d7fe7e64b116ae5cfa9e6585972e3dea75996c0c
 
 build:
   number: 0
@@ -25,10 +24,10 @@ requirements:
   host:
     - pip
     - python ${{ python_min }}.*
-    - setuptools >=64
+    - setuptools >=77
   run:
     - python >=${{ python_min }}
-    - fastcore >=2.2.5
+    - fastcore >=2.2.34
     - ipython
 
 tests:
