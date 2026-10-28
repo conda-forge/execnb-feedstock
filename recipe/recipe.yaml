@@ -3,7 +3,6 @@ schema_version: 1
 context:
   name: execnb
   version: "0.3.4"
-  python_min: "3.11"
 
 package:
   name: ${{ name|lower }}
@@ -25,10 +24,10 @@ requirements:
   host:
     - pip
     - python ${{ python_min }}.*
-    - setuptools >=64
+    - setuptools >=77
   run:
     - python >=${{ python_min }}
-    - fastcore >=2.2.5
+    - fastcore >=2.2.34
     - ipython
 
 tests:
